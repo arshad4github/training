@@ -1,0 +1,42 @@
+steps:
+first configure git
+git config user.name "name of user "
+git config user.email "email of user"
+git config --list
+
+
+ create a folder and open with  git bash
+* git pwd			show present working directory 
+
+* git init  	to make the folder of git 
+
+create files and folders as required
+* git status
+* git add --a  move to staging area
+* git commit -m "name the commit" commit to upload
+
+* git log
+
+====
+* ls list a folder /directory
+cd change directory
+* git clone
+open project on github copy link and git clone
+=====
+ignore the file not to commit
+	create a file .gitignore
+	name the files you want to ignore per line
+	*.log etc to ignore all files of .log extension
+	folder/ ignore the whole folder with all subfolder and files 
+git status to verify
+====
+versioning
+	git diff give different vesions of a file in staging area
+	
+test data
+
+just example
+
+
+
+
