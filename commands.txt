@@ -13,6 +13,7 @@ git config --list
 create files and folders as required
 * git status
 * git add --a  move to staging area
+* git add filename.ext move a particular file to staging area
 * git commit -m "name the commit" commit to upload
 
 * git log
@@ -32,11 +33,32 @@ git status to verify
 ====
 versioning
 	git diff give different vesions of a file in staging area
+	git diff --staged compare our staged file to last commited
+
+Direct commit
+	git commit -a -m "message"
+
+remove from staging area
+	git restore --staged filename.ext
+restore the deleted code from last commit
+	git restore filename.ext
+	git checkout -f		restore all file to last commit point
+Renaming the files
+	git status
+	it will show a deleted (old file) and gives us new file
+	git add --a and then git status  --> gives us renamed status
 	
-test data
+	git mv oldfilename.ext newfilename.ext
+	git commit -m "rename msg"
+delete a file
+	git rm filename.ext
+	
+delete a ignored file if it was staged before
+	git rm --cached filename.ext
 
-just example
+pushing and pulling on remote side:
 
+	
 
 
 
